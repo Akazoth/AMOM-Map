@@ -25,7 +25,7 @@
     var imageUrl = 'Miraket.jpg';
     
     // Image dimensions (in pixels) — must match your actual image size
-    var imageWidth = 2000, imageHeight = 1500; 
+    var imageWidth = 2048, imageHeight = 1536; 
 
     // Define map bounds based on image size
     var bounds = [[0,0], [imageHeight, imageWidth]];
@@ -35,11 +35,12 @@
     map.fitBounds(bounds);
 
     // Example markers
-    L.marker([500, 800]).addTo(map)
-      .bindPopup("<b>Town of Eldoria</b><br>Friendly villagers, decent ale.");
+    L.marker([600, 800]).addTo(map)
+      .bindPopup("<b>Grave of Rudy</b><br>Died heroically");
 
     L.marker([1200, 1400]).addTo(map)
       .bindPopup("<b>Goblin Camp</b><br>Watch out for ambushes!");
   </script>
 </body>
 </html>
+
